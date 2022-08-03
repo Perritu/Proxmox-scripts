@@ -20,10 +20,10 @@ mkdir -p /var/lib/vz/images/$VMid
 cd /var/lib/vz/images/$VMid
 
 if [[ "$ImageFile" = "" ]]; then
-	echo "Downloading release 19.01.7."
+	echo "Downloading release 21.02.3-x86-64."
 	echo "To override the image file, set the url in the Env var \$ImageFile."
 
-	ImageFile="https://downloads.openwrt.org/releases/19.07.7/targets/x86/64/openwrt-19.07.7-x86-64-combined-ext4.img.gz"
+	ImageFile="https://downloads.openwrt.org/releases/21.02.3/targets/x86/64/openwrt-21.02.3-x86-64-generic-ext4-combined.img.gz"
 fi
 
 noterr curl -o openwrt-ext4.img.gz "$ImageFile"
